@@ -9,10 +9,8 @@ permit_argvs = ['-c', 'clean', '-p', 'pep8']
 
 def main():
     def print_info():
-        print("-c\t\tremove *.pyc files.")
-        print("clean\t\tremove *.pyc files.")
-        print("-p\t\trun pep8 check.")
-        print("pep8\t\trun pep8 check.")
+        print("clean (-c)\t\tremove *.pyc files.")
+        print("pep8 (-c)\t\trun pep8 check.")
 
     if len(sys.argv) <= 1 or not sys.argv[1] in permit_argvs:
         print_info()
