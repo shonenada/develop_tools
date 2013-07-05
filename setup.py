@@ -7,7 +7,7 @@ metadata = {"name": "develop_tools",
             "author_email": "shonenada@gmail.com",
             "url": "https://github.com/shonenada/develop_tools/",
             "platforms": "any",
-            "packages" = find_packages(),
+            "packages": find_packages(),
             "scripts": ["tools.py"],
             "description": "A tools set to help develop."}
 
