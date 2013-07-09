@@ -24,7 +24,11 @@ def main():
         for i in range(0, len(sys.argv) - 1):
             argv = sys.argv[i + 1]
             if argv == "-c" or argv == "clean":
-                clean()
+                if len(sys.argv) > 2:
+                    path = sys.argv[(i + 1) + 1]
+                    clean(path)
+                else:
+                    clean()
             if argv == "-p" or argv == "pep8":
                 pep8()
             if argv == '-s' or argv == 'search':
