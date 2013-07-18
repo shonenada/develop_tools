@@ -30,7 +30,11 @@ def main():
                 else:
                     clean()
             if argv == "-p" or argv == "pep8":
-                pep8()
+                if len(sys.argv) > 2:
+                    path = sys.argv[(i + 1) + 1]
+                    pep8(path)
+                else:
+                    pep8()
             if argv == '-s' or argv == 'search':
                 path = sys.argv[(i + 1) + 1]
                 suffix = sys.argv[(i + 1) + 2]
