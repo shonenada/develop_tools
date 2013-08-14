@@ -11,7 +11,7 @@ permit_argvs = ['-c', 'clean', '-p', 'pep8', '-s', 'search', '-ss', 'ssearch']
 def main():
     def print_info():
         print("clean (-c)\t\tremove *.pyc files.")
-        print("pep8 (-c)\t\trun pep8 check.")
+        print("pep8 (-p)\t\trun pep8 check.")
         print("search (-s)\t\tsearch partten in files, "
               "example: search ./ py|txt content")
         print("ssearch (-ss)\t\tadvance search partten in files, "
